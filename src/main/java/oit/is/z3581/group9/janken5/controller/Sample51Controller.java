@@ -43,8 +43,6 @@ public class Sample51Controller {
     Fruit fruit3 = fMapper.selectById(id);
     model.addAttribute("fruit3", fruit3);
 
-    // 削除
-    fMapper.deleteById(id);
 
     // 削除後のフルーツリストを取得
     ArrayList<Fruit> fruits2 = fMapper.selectAllFruit();
